@@ -1,0 +1,38 @@
+#pragma once
+
+// MyFile
+#include"DirectXUtilityModule/DirectXDataTypes.h"
+
+namespace InputElements {
+	constexpr InputElementDesc PositionElement = {
+		"POSITION", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, D3D11_APPEND_ALIGNED_ELEMENT, D3D11_INPUT_PER_VERTEX_DATA, 0
+	};
+
+	constexpr InputElementDesc NormalElement = {
+		"NORMAL", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, D3D11_APPEND_ALIGNED_ELEMENT, D3D11_INPUT_PER_VERTEX_DATA, 0
+	};
+
+	constexpr InputElementDesc TangentElement = {
+		"TANGENT", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, D3D11_APPEND_ALIGNED_ELEMENT, D3D11_INPUT_PER_VERTEX_DATA, 0
+	};
+
+	constexpr InputElementDesc BiTangentElement = {
+		"BITANGENT", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, D3D11_APPEND_ALIGNED_ELEMENT, D3D11_INPUT_PER_VERTEX_DATA, 0
+	};
+
+	constexpr InputElementDesc TexCoordElement = {
+		"TEXCOORD", 0, DXGI_FORMAT_R32G32_FLOAT, 0,  D3D11_APPEND_ALIGNED_ELEMENT, D3D11_INPUT_PER_VERTEX_DATA, 0
+	};
+
+	constexpr InputElementDesc ColorElement = {
+		"COLOR", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0, D3D11_APPEND_ALIGNED_ELEMENT, D3D11_INPUT_PER_VERTEX_DATA,	0
+	};
+
+	constexpr InputElementDesc BoneIndexElement = {
+		"BONEINDEX", 0, DXGI_FORMAT_R32G32B32A32_SINT, 0, D3D11_APPEND_ALIGNED_ELEMENT, D3D11_INPUT_PER_VERTEX_DATA, 0
+	};
+
+	constexpr InputElementDesc BoneWeightElement = {
+		"BONEWEIGHT", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0, D3D11_APPEND_ALIGNED_ELEMENT, D3D11_INPUT_PER_VERTEX_DATA, 0
+	};
+}
